@@ -1,0 +1,494 @@
+--------------------------------------------------------------------------------
+Profile data file 'artifacts/callgrind.out' (creator: callgrind-3.19.0)
+--------------------------------------------------------------------------------
+I1 cache: 
+D1 cache: 
+LL cache: 
+Timerange: Basic block 0 - 52682
+Trigger: Program termination
+Profiled target:  target/release/demo (PID 9472, part 1)
+Events recorded:  Ir
+Events shown:     Ir
+Event sort order: Ir
+Thresholds:       99
+Include dirs:     
+User annotated:   
+Auto-annotation:  on
+
+--------------------------------------------------------------------------------
+Ir               
+--------------------------------------------------------------------------------
+253,575 (100.0%)  PROGRAM TOTALS
+
+--------------------------------------------------------------------------------
+Ir               file:function
+--------------------------------------------------------------------------------
+38,084 (15.02%)  ./stdio-common/./stdio-common/vfscanf-internal.c:__vfscanf_internal'2 [/usr/lib/aarch64-linux-gnu/libc.so.6]
+30,719 (12.11%)  ./elf/./elf/dl-lookup.c:do_lookup_x'2 [/usr/lib/aarch64-linux-gnu/ld-linux-aarch64.so.1]
+15,612 ( 6.16%)  ./string/../sysdeps/aarch64/strcmp.S:strcmp [/usr/lib/aarch64-linux-gnu/ld-linux-aarch64.so.1]
+15,242 ( 6.01%)  ./stdlib/../stdlib/strtol_l.c:____strtoul_l_internal'2 [/usr/lib/aarch64-linux-gnu/libc.so.6]
+12,816 ( 5.05%)  ./elf/./elf/dl-lookup.c:do_lookup_x [/usr/lib/aarch64-linux-gnu/ld-linux-aarch64.so.1]
+ 8,796 ( 3.47%)  ./elf/../sysdeps/generic/dl-new-hash.h:_dl_lookup_symbol_x'2
+ 7,787 ( 3.07%)  ./elf/./elf/dl-lookup.c:check_match [/usr/lib/aarch64-linux-gnu/ld-linux-aarch64.so.1]
+ 7,468 ( 2.95%)  ./elf/./elf/dl-lookup.c:_dl_lookup_symbol_x'2 [/usr/lib/aarch64-linux-gnu/ld-linux-aarch64.so.1]
+ 5,800 ( 2.29%)  ./elf/./elf/dl-reloc.c:_dl_lookup_symbol_x'2
+ 5,588 ( 2.20%)  ./elf/../sysdeps/aarch64/dl-machine.h:_dl_relocate_object [/usr/lib/aarch64-linux-gnu/ld-linux-aarch64.so.1]
+ 4,368 ( 1.72%)  ./stdio-common/./stdio-common/vfscanf-internal.c:__vfscanf_internal [/usr/lib/aarch64-linux-gnu/libc.so.6]
+ 4,097 ( 1.62%)  ./elf/../sysdeps/aarch64/dl-machine.h:_dl_lookup_symbol_x'2
+ 4,030 ( 1.59%)  ./elf/./elf/do-rel.h:_dl_relocate_object [/usr/lib/aarch64-linux-gnu/ld-linux-aarch64.so.1]
+ 3,471 ( 1.37%)  ./elf/./elf/dl-version.c:_dl_check_map_versions'2 [/usr/lib/aarch64-linux-gnu/ld-linux-aarch64.so.1]
+ 3,219 ( 1.27%)  ./elf/./elf/dl-tunables.c:__GI___tunables_init'2 [/usr/lib/aarch64-linux-gnu/ld-linux-aarch64.so.1]
+ 3,081 ( 1.22%)  ./stdio-common/./stdio-common/vfscanf-internal.c:_IO_sputbackc'2
+ 2,769 ( 1.09%)  ./libio/./libio/genops.c:_IO_sputbackc'2 [/usr/lib/aarch64-linux-gnu/libc.so.6]
+ 2,716 ( 1.07%)  ./string/../sysdeps/aarch64/strcmp.S:strcmp'2 [/usr/lib/aarch64-linux-gnu/ld-linux-aarch64.so.1]
+ 2,693 ( 1.06%)  ./elf/./elf/do-rel.h:_dl_lookup_symbol_x'2
+ 2,678 ( 1.06%)  ./elf/../sysdeps/aarch64/dl-machine.h:_dl_relocate_object'2 [/usr/lib/aarch64-linux-gnu/ld-linux-aarch64.so.1]
+ 2,274 ( 0.90%)  ./string/../sysdeps/aarch64/multiarch/../memchr.S:__GI_memchr [/usr/lib/aarch64-linux-gnu/libc.so.6]
+ 2,220 ( 0.88%)  ./libio/./libio/iogetdelim.c:getdelim'2 [/usr/lib/aarch64-linux-gnu/libc.so.6]
+ 1,903 ( 0.75%)  ./string/../sysdeps/aarch64/multiarch/strlen_asimd.S:__strlen_asimd [/usr/lib/aarch64-linux-gnu/libc.so.6]
+ 1,804 ( 0.71%)  ./elf/./elf/do-rel.h:_dl_relocate_object'2 [/usr/lib/aarch64-linux-gnu/ld-linux-aarch64.so.1]
+ 1,768 ( 0.70%)  ./stdlib/../stdlib/strtol_l.c:____strtoul_l_internal [/usr/lib/aarch64-linux-gnu/libc.so.6]
+ 1,482 ( 0.58%)  ./stdio-common/./stdio-common/isoc99_sscanf.c:__isoc99_sscanf'2 [/usr/lib/aarch64-linux-gnu/libc.so.6]
+ 1,402 ( 0.55%)  ./elf/./elf/dl-cache.c:_dl_cache_libcmp [/usr/lib/aarch64-linux-gnu/ld-linux-aarch64.so.1]
+ 1,334 ( 0.53%)  ./malloc/./malloc/malloc.c:_int_malloc'2 [/usr/lib/aarch64-linux-gnu/libc.so.6]
+ 1,267 ( 0.50%)  ./string/../sysdeps/aarch64/multiarch/../memcpy.S:__GI_memcpy [/usr/lib/aarch64-linux-gnu/libc.so.6]
+ 1,267 ( 0.50%)  ???:core::slice::memchr::memrchr [/work/broken-app/target/release/demo]
+ 1,131 ( 0.45%)  ./libio/./libio/strops.c:_IO_str_init_static_internal [/usr/lib/aarch64-linux-gnu/libc.so.6]
+ 1,122 ( 0.44%)  ./elf/./elf/dl-load.c:_dl_map_object_from_fd'2 [/usr/lib/aarch64-linux-gnu/ld-linux-aarch64.so.1]
+ 1,010 ( 0.40%)  ???:<std::io::stdio::StdoutLock as std::io::Write>::write_all [/work/broken-app/target/release/demo]
+   956 ( 0.38%)  ./elf/../sysdeps/generic/dl-new-hash.h:_dl_lookup_symbol_x
+   860 ( 0.34%)  ./malloc/./malloc/malloc.c:_int_free [/usr/lib/aarch64-linux-gnu/libc.so.6]
+   857 ( 0.34%)  ./libio/./libio/genops.c:_IO_setb [/usr/lib/aarch64-linux-gnu/libc.so.6]
+   817 ( 0.32%)  ./nptl/./nptl/libc-cleanup.c:__libc_cleanup_push_defer [/usr/lib/aarch64-linux-gnu/libc.so.6]
+   815 ( 0.32%)  ./elf/./elf/rtld.c:dl_main'2 [/usr/lib/aarch64-linux-gnu/ld-linux-aarch64.so.1]
+   802 ( 0.32%)  ./libio/./libio/genops.c:_IO_old_init [/usr/lib/aarch64-linux-gnu/libc.so.6]
+   780 ( 0.31%)  ./elf/./elf/dl-deps.c:_dl_map_object_deps'2 [/usr/lib/aarch64-linux-gnu/ld-linux-aarch64.so.1]
+   774 ( 0.31%)  ./string/../sysdeps/aarch64/multiarch/../memcpy.S:memcpy [/usr/lib/aarch64-linux-gnu/ld-linux-aarch64.so.1]
+   763 ( 0.30%)  ./malloc/./malloc/malloc.c:_int_malloc [/usr/lib/aarch64-linux-gnu/libc.so.6]
+   755 ( 0.30%)  ???:broken_app::algo::slow_dedup'2 [/work/broken-app/target/release/demo]
+   741 ( 0.29%)  ./stdio-common/./stdio-common/vfscanf-internal.c:_IO_sputbackc
+   734 ( 0.29%)  ./elf/./elf/dl-reloc.c:_dl_relocate_object'2 [/usr/lib/aarch64-linux-gnu/ld-linux-aarch64.so.1]
+   725 ( 0.29%)  ./libio/./libio/genops.c:_IO_no_init [/usr/lib/aarch64-linux-gnu/libc.so.6]
+   696 ( 0.27%)  ./elf/./elf/dl-misc.c:_dl_name_match_p [/usr/lib/aarch64-linux-gnu/ld-linux-aarch64.so.1]
+   691 ( 0.27%)  ./elf/./elf/dl-minimal-malloc.c:__minimal_malloc [/usr/lib/aarch64-linux-gnu/ld-linux-aarch64.so.1]
+   688 ( 0.27%)  ./nptl/./nptl/libc-cleanup.c:__libc_cleanup_pop_restore [/usr/lib/aarch64-linux-gnu/libc.so.6]
+   675 ( 0.27%)  ./malloc/./malloc/arena.c:ptmalloc_init.part.0 [/usr/lib/aarch64-linux-gnu/libc.so.6]
+   667 ( 0.26%)  ./elf/../sysdeps/generic/ldsodefs.h:do_lookup_x'2
+   667 ( 0.26%)  ./elf/./elf/dl-object.c:_dl_new_object'2 [/usr/lib/aarch64-linux-gnu/ld-linux-aarch64.so.1]
+   663 ( 0.26%)  ./libio/./libio/genops.c:_IO_sputbackc [/usr/lib/aarch64-linux-gnu/libc.so.6]
+   653 ( 0.26%)  ./nptl/./nptl/pthread_getattr_np.c:__isoc99_sscanf'2
+   625 ( 0.25%)  ./elf/./elf/dl-tunables.h:__GI___tunables_init'2 [/usr/lib/aarch64-linux-gnu/ld-linux-aarch64.so.1]
+   612 ( 0.24%)  ./elf/../sysdeps/generic/dl-protected.h:do_lookup_x
+   608 ( 0.24%)  ./stdio-common/../libio/strfile.h:__isoc99_sscanf'2
+   592 ( 0.23%)  ./elf/./elf/dl-hwcaps.c:_dl_important_hwcaps'2 [/usr/lib/aarch64-linux-gnu/ld-linux-aarch64.so.1]
+   585 ( 0.23%)  ./elf/./elf/dl-load.c:_dl_map_object [/usr/lib/aarch64-linux-gnu/ld-linux-aarch64.so.1]
+   561 ( 0.22%)  ./string/../sysdeps/aarch64/nptl/../memset.S:memset [/usr/lib/aarch64-linux-gnu/ld-linux-aarch64.so.1]
+   556 ( 0.22%)  ./elf/../sysdeps/generic/ldsodefs.h:_dl_lookup_symbol_x'2
+   512 ( 0.20%)  ./elf/./elf/dl-lookup.c:_dl_lookup_symbol_x [/usr/lib/aarch64-linux-gnu/ld-linux-aarch64.so.1]
+   503 ( 0.20%)  ./elf/./elf/dl-runtime.c:_dl_fixup [/usr/lib/aarch64-linux-gnu/ld-linux-aarch64.so.1]
+   468 ( 0.18%)  ./stdio-common/./stdio-common/isoc99_sscanf.c:__vfscanf_internal
+   466 ( 0.18%)  ./elf/./dl-map-segments.h:_dl_map_object_from_fd'2 [/usr/lib/aarch64-linux-gnu/ld-linux-aarch64.so.1]
+   459 ( 0.18%)  ./elf/../sysdeps/generic/ldsodefs.h:do_lookup_x [/usr/lib/aarch64-linux-gnu/ld-linux-aarch64.so.1]
+   429 ( 0.17%)  ./string/../sysdeps/aarch64/rawmemchr.S:rawmemchr [/usr/lib/aarch64-linux-gnu/libc.so.6]
+   400 ( 0.16%)  ./elf/./elf/dl-cache.c:search_cache'2 [/usr/lib/aarch64-linux-gnu/ld-linux-aarch64.so.1]
+   400 ( 0.16%)  ./elf/./elf/dl-load.c:open_verify.constprop.0'2 [/usr/lib/aarch64-linux-gnu/ld-linux-aarch64.so.1]
+   397 ( 0.16%)  ./malloc/./malloc/malloc.c:malloc [/usr/lib/aarch64-linux-gnu/libc.so.6]
+   395 ( 0.16%)  ./elf/./elf/dl-reloc.c:_dl_relocate_object [/usr/lib/aarch64-linux-gnu/ld-linux-aarch64.so.1]
+   390 ( 0.15%)  ./string/../sysdeps/aarch64/multiarch/../strlen.S:strlen [/usr/lib/aarch64-linux-gnu/ld-linux-aarch64.so.1]
+   381 ( 0.15%)  ./elf/./elf/dl-tunables.c:__tunable_get_val [/usr/lib/aarch64-linux-gnu/ld-linux-aarch64.so.1]
+   366 ( 0.14%)  ./elf/./elf/dl-find_object.c:_dlfo_process_initial'2 [/usr/lib/aarch64-linux-gnu/ld-linux-aarch64.so.1]
+   352 ( 0.14%)  ./elf/./elf/dl-load.c:open_verify.constprop.0 [/usr/lib/aarch64-linux-gnu/ld-linux-aarch64.so.1]
+   352 ( 0.14%)  ./elf/./elf/dl-sort-maps.c:dfs_traversal.part.0 [/usr/lib/aarch64-linux-gnu/ld-linux-aarch64.so.1]
+   343 ( 0.14%)  ???:<core::fmt::Formatter>::pad_integral [/work/broken-app/target/release/demo]
+   339 ( 0.13%)  ./elf/./elf/get-dynamic-info.h:_dl_map_object_from_fd'2 [/usr/lib/aarch64-linux-gnu/ld-linux-aarch64.so.1]
+   315 ( 0.12%)  ???:<std::io::stdio::StdoutLock as std::io::Write>::write_all'2 [/work/broken-app/target/release/demo]
+   312 ( 0.12%)  ./stdio-common/../include/scratch_buffer.h:__vfscanf_internal'2
+   289 ( 0.11%)  ./io/../sysdeps/unix/sysv/linux/open64_nocancel.c:__open_nocancel [/usr/lib/aarch64-linux-gnu/ld-linux-aarch64.so.1]
+   277 ( 0.11%)  ./elf/./elf/dl-init.c:call_init'2 [/usr/lib/aarch64-linux-gnu/ld-linux-aarch64.so.1]
+   276 ( 0.11%)  ./elf/./elf/dl-deps.c:_dl_catch_exception'2
+   266 ( 0.10%)  ./nptl/./nptl/pthread_getattr_np.c:getdelim'2
+   253 ( 0.10%)  ./elf/./elf/dl-load.c:open_path [/usr/lib/aarch64-linux-gnu/ld-linux-aarch64.so.1]
+   252 ( 0.10%)  ./elf/./dl-find_object.h:_dl_find_object_from_map'2 [/usr/lib/aarch64-linux-gnu/ld-linux-aarch64.so.1]
+   252 ( 0.10%)  ./string/../sysdeps/aarch64/strchr.S:index [/usr/lib/aarch64-linux-gnu/ld-linux-aarch64.so.1]
+   249 ( 0.10%)  ./signal/../sysdeps/unix/sysv/linux/libc_sigaction.c:__libc_sigaction [/usr/lib/aarch64-linux-gnu/libc.so.6]
+   242 ( 0.10%)  ./elf/./elf/dl-load.c:open_path'2 [/usr/lib/aarch64-linux-gnu/ld-linux-aarch64.so.1]
+   234 ( 0.09%)  ./stdio-common/../include/scratch_buffer.h:__vfscanf_internal
+   234 ( 0.09%)  ./stdio-common/./stdio-common/vfscanf-internal.c:____strtoul_l_internal
+   234 ( 0.09%)  ./stdio-common/./stdio-common/vfscanf-internal.c:____strtoul_l_internal'2
+   232 ( 0.09%)  ./malloc/./malloc/malloc.c:free'2 [/usr/lib/aarch64-linux-gnu/libc.so.6]
+   227 ( 0.09%)  ./misc/./misc/getauxval.c:getauxval [/usr/lib/aarch64-linux-gnu/ld-linux-aarch64.so.1]
+   227 ( 0.09%)  ./string/./string/strcspn.c:strcspn [/usr/lib/aarch64-linux-gnu/ld-linux-aarch64.so.1]
+   225 ( 0.09%)  ???:<&std::io::stdio::Stdout as std::io::Write>::write_fmt [/work/broken-app/target/release/demo]
+   223 ( 0.09%)  ./elf/../sysdeps/aarch64/dl-machine.h:_dl_start
+   221 ( 0.09%)  ./libio/./libio/iogetdelim.c:getdelim [/usr/lib/aarch64-linux-gnu/libc.so.6]
+   215 ( 0.08%)  ???:<u64 as core::fmt::Display>::fmt [/work/broken-app/target/release/demo]
+   211 ( 0.08%)  ./elf/./get-dynamic-info.h:dl_main'2 [/usr/lib/aarch64-linux-gnu/ld-linux-aarch64.so.1]
+   210 ( 0.08%)  ./elf/./elf/dl-version.c:_dl_check_map_versions [/usr/lib/aarch64-linux-gnu/ld-linux-aarch64.so.1]
+   207 ( 0.08%)  ./elf/./elf/dl-runtime.c:_dl_lookup_symbol_x
+   204 ( 0.08%)  ./elf/./elf/dl-find_object.c:_dlfo_sort_mappings [/usr/lib/aarch64-linux-gnu/ld-linux-aarch64.so.1]
+   204 ( 0.08%)  ./elf/./elf/get-dynamic-info.h:_dl_map_object_from_fd [/usr/lib/aarch64-linux-gnu/ld-linux-aarch64.so.1]
+   201 ( 0.08%)  ./elf/./elf/get-dynamic-info.h:_dl_new_object'2
+   200 ( 0.08%)  ???:core::fmt::write [/work/broken-app/target/release/demo]
+   195 ( 0.08%)  ./stdlib/../stdlib/strtol.c:__strtoul_internal [/usr/lib/aarch64-linux-gnu/libc.so.6]
+   195 ( 0.08%)  ./stdlib/../stdlib/strtol.c:__strtoul_internal'2 [/usr/lib/aarch64-linux-gnu/libc.so.6]
+   187 ( 0.07%)  ./elf/./elf/dl-tunables.c:__tunable_get_val'2 [/usr/lib/aarch64-linux-gnu/ld-linux-aarch64.so.1]
+   186 ( 0.07%)  ./elf/./elf/dl-load.c:_dl_init_paths'2 [/usr/lib/aarch64-linux-gnu/ld-linux-aarch64.so.1]
+   184 ( 0.07%)  ???:<std::io::default_write_fmt::Adapter<std::io::stdio::StdoutLock> as core::fmt::Write>::write_str'2 [/work/broken-app/target/release/demo]
+   183 ( 0.07%)  ./libio/./libio/fileops.c:_IO_file_underflow@@GLIBC_2.17 [/usr/lib/aarch64-linux-gnu/libc.so.6]
+   183 ( 0.07%)  ???:<T as alloc::string::SpecExtendStr>::spec_extend_into'2 [/work/broken-app/target/release/demo]
+   182 ( 0.07%)  ./elf/./elf/dl-minimal.c:strsep'2 [/usr/lib/aarch64-linux-gnu/ld-linux-aarch64.so.1]
+   182 ( 0.07%)  ./malloc/./malloc/malloc.c:_int_free'2 [/usr/lib/aarch64-linux-gnu/libc.so.6]
+   174 ( 0.07%)  ./elf/./elf/dl-lookup.c:check_match'2 [/usr/lib/aarch64-linux-gnu/ld-linux-aarch64.so.1]
+   171 ( 0.07%)  ./elf/./elf/dl-load.c:_dl_map_object_from_fd [/usr/lib/aarch64-linux-gnu/ld-linux-aarch64.so.1]
+   171 ( 0.07%)  ./elf/./elf/dl-object.c:_dl_add_to_namespace_list [/usr/lib/aarch64-linux-gnu/ld-linux-aarch64.so.1]
+   171 ( 0.07%)  ./elf/./elf/dl-reloc.c:_dl_lookup_symbol_x
+   171 ( 0.07%)  ./stdlib/./stdlib/cxa_finalize.c:__cxa_finalize [/usr/lib/aarch64-linux-gnu/libc.so.6]
+   170 ( 0.07%)  ???:core::fmt::write'2 [/work/broken-app/target/release/demo]
+   168 ( 0.07%)  ???:<std::io::buffered::bufwriter::BufWriter<std::io::stdio::StdoutRaw>>::flush_buf'2 [/work/broken-app/target/release/demo]
+   167 ( 0.07%)  ./elf/./elf/dl-load.c:_dl_map_object'2 [/usr/lib/aarch64-linux-gnu/ld-linux-aarch64.so.1]
+   158 ( 0.06%)  ./elf/./elf/dl-deps.c:_dl_map_object_deps [/usr/lib/aarch64-linux-gnu/ld-linux-aarch64.so.1]
+   158 ( 0.06%)  ???:<T as alloc::string::SpecExtendStr>::spec_extend_into [/work/broken-app/target/release/demo]
+   157 ( 0.06%)  ???:broken_app::algo::slow_fib [/work/broken-app/target/release/demo]
+   156 ( 0.06%)  ./libio/./libio/libioP.h:getdelim [/usr/lib/aarch64-linux-gnu/libc.so.6]
+   155 ( 0.06%)  ./elf/../sysdeps/aarch64/dl-machine.h:_dl_lookup_symbol_x
+   152 ( 0.06%)  ./malloc/./malloc/malloc.c:malloc'2 [/usr/lib/aarch64-linux-gnu/libc.so.6]
+   150 ( 0.06%)  ./elf/../sysdeps/unix/sysv/linux/dl-parse_auxv.h:_dl_sysdep_parse_arguments
+   150 ( 0.06%)  ./elf/./elf/dl-lookup-direct.c:check_match [/usr/lib/aarch64-linux-gnu/ld-linux-aarch64.so.1]
+   149 ( 0.06%)  ???:__init_cpu_features_constructor [/work/broken-app/target/release/demo]
+   147 ( 0.06%)  ./elf/./elf/dl-load.c:_dl_new_object'2
+   146 ( 0.06%)  ./elf/./elf/dl-sort-maps.c:_dl_sort_maps [/usr/lib/aarch64-linux-gnu/ld-linux-aarch64.so.1]
+   146 ( 0.06%)  ???:__aarch64_cas4_acq [/usr/lib/aarch64-linux-gnu/libc.so.6]
+   146 ( 0.06%)  ???:__aarch64_swp4_rel [/usr/lib/aarch64-linux-gnu/libc.so.6]
+   144 ( 0.06%)  ./elf/../sysdeps/aarch64/dl-trampoline.S:_dl_runtime_resolve [/usr/lib/aarch64-linux-gnu/ld-linux-aarch64.so.1]
+   144 ( 0.06%)  ./elf/./elf/dl-lookup-direct.c:_dl_lookup_direct [/usr/lib/aarch64-linux-gnu/ld-linux-aarch64.so.1]
+   140 ( 0.06%)  ./elf/./elf/dl-sort-maps.c:_dl_sort_maps'2 [/usr/lib/aarch64-linux-gnu/ld-linux-aarch64.so.1]
+   140 ( 0.06%)  ./misc/../sysdeps/unix/sysv/linux/mmap64.c:mmap [/usr/lib/aarch64-linux-gnu/ld-linux-aarch64.so.1]
+   140 ( 0.06%)  ???:<str>::to_lowercase'2 [/work/broken-app/target/release/demo]
+   132 ( 0.05%)  ./elf/./elf/do-rel.h:_dl_start [/usr/lib/aarch64-linux-gnu/ld-linux-aarch64.so.1]
+   132 ( 0.05%)  ???:<core::fmt::builders::DebugSet>::entry'2 [/work/broken-app/target/release/demo]
+   130 ( 0.05%)  ???:std::io::stdio::_print'2 [/work/broken-app/target/release/demo]
+   127 ( 0.05%)  ./malloc/./malloc/malloc.c:free [/usr/lib/aarch64-linux-gnu/libc.so.6]
+   126 ( 0.05%)  ./setjmp/../sysdeps/aarch64/setjmp.S:__sigsetjmp [/usr/lib/aarch64-linux-gnu/ld-linux-aarch64.so.1]
+   126 ( 0.05%)  ???:<std::io::buffered::bufwriter::BufWriter<std::io::stdio::StdoutRaw>>::flush_buf [/work/broken-app/target/release/demo]
+   125 ( 0.05%)  ./io/../sysdeps/unix/sysv/linux/fstatat64.c:fstatat [/usr/lib/aarch64-linux-gnu/ld-linux-aarch64.so.1]
+   122 ( 0.05%)  ./elf/./elf/dl-fini.c:pthread_mutex_lock@@GLIBC_2.17
+   121 ( 0.05%)  ./elf/./elf/dl-call_fini.c:_dl_call_fini [/usr/lib/aarch64-linux-gnu/ld-linux-aarch64.so.1]
+   121 ( 0.05%)  ./elf/./get-dynamic-info.h:_dl_start [/usr/lib/aarch64-linux-gnu/ld-linux-aarch64.so.1]
+   117 ( 0.05%)  ./elf/./get-dynamic-info.h:_dl_start'2 [/usr/lib/aarch64-linux-gnu/ld-linux-aarch64.so.1]
+   115 ( 0.05%)  ./elf/./elf/dl-reloc.c:_dl_protect_relro [/usr/lib/aarch64-linux-gnu/ld-linux-aarch64.so.1]
+   115 ( 0.05%)  ./elf/./elf/dl-setup_hash.c:_dl_setup_hash [/usr/lib/aarch64-linux-gnu/ld-linux-aarch64.so.1]
+   114 ( 0.04%)  ./elf/./elf/dl-tls.c:_dl_allocate_tls_init'2 [/usr/lib/aarch64-linux-gnu/ld-linux-aarch64.so.1]
+   114 ( 0.04%)  ./libio/./libio/genops.c:_IO_link_in [/usr/lib/aarch64-linux-gnu/libc.so.6]
+   114 ( 0.04%)  ./stdio-common/./stdio-common/getline.c:getline'2 [/usr/lib/aarch64-linux-gnu/libc.so.6]
+   110 ( 0.04%)  ./elf/./elf/dl-load.c:fillin_rpath.isra.0'2 [/usr/lib/aarch64-linux-gnu/ld-linux-aarch64.so.1]
+   108 ( 0.04%)  ./elf/../sysdeps/aarch64/dl-trampoline.S:_dl_fixup
+   105 ( 0.04%)  ???:<core::fmt::Formatter>::pad_integral::write_prefix [/work/broken-app/target/release/demo]
+   104 ( 0.04%)  ./libio/./libio/genops.c:__underflow [/usr/lib/aarch64-linux-gnu/libc.so.6]
+    98 ( 0.04%)  ./malloc/./malloc/malloc.c:_int_realloc [/usr/lib/aarch64-linux-gnu/libc.so.6]
+    97 ( 0.04%)  ./malloc/./malloc/malloc.c:realloc'2 [/usr/lib/aarch64-linux-gnu/libc.so.6]
+    96 ( 0.04%)  ./elf/./dl-find_object.h:_dl_find_object_from_map [/usr/lib/aarch64-linux-gnu/ld-linux-aarch64.so.1]
+    96 ( 0.04%)  ./libio/./libio/genops.c:_IO_switch_to_get_mode [/usr/lib/aarch64-linux-gnu/libc.so.6]
+    94 ( 0.04%)  ./malloc/./malloc/malloc.c:realloc [/usr/lib/aarch64-linux-gnu/libc.so.6]
+    92 ( 0.04%)  ./elf/./elf/dl-cache.c:search_cache [/usr/lib/aarch64-linux-gnu/ld-linux-aarch64.so.1]
+    92 ( 0.04%)  ???:<alloc::collections::btree::node::Handle<alloc::collections::btree::node::NodeRef<alloc::collections::btree::node::marker::Mut, usize, std::sys::pal::unix::stack_overflow::thread_info::ThreadInfo, alloc::collections::btree::node::marker::Leaf>, alloc::collections::btree::node::marker::KV>>::remove_leaf_kv::<<alloc::collections::btree::map::entry::OccupiedEntry<usize, std::sys::pal::unix::stack_overflow::thread_info::ThreadInfo>>::remove_kv::{closure#0}, alloc::alloc::Global> [/work/broken-app/target/release/demo]
+    91 ( 0.04%)  ./malloc/./malloc/malloc.c:sysmalloc'2 [/usr/lib/aarch64-linux-gnu/libc.so.6]
+    90 ( 0.04%)  ???:std::io::stdio::print_to_buffer_if_capture_used [/work/broken-app/target/release/demo]
+    89 ( 0.04%)  ???:std::sys::pal::unix::stack_overflow::thread_info::set_current_info [/work/broken-app/target/release/demo]
+    88 ( 0.03%)  ./elf/./elf/dl-minimal.c:_dl_lookup_symbol_x
+    85 ( 0.03%)  ./io/../sysdeps/unix/sysv/linux/write.c:write [/usr/lib/aarch64-linux-gnu/libc.so.6]
+    83 ( 0.03%)  ./elf/./elf/dl-tunables.c:__GI___tunables_init [/usr/lib/aarch64-linux-gnu/ld-linux-aarch64.so.1]
+    82 ( 0.03%)  ./elf/./elf/do-rel.h:_dl_lookup_symbol_x
+    81 ( 0.03%)  ./elf/./elf/dl-hwcaps_split.c:_dl_hwcaps_split [/usr/lib/aarch64-linux-gnu/ld-linux-aarch64.so.1]
+    79 ( 0.03%)  ./elf/./elf/dl-environ.c:_dl_next_ld_env_entry [/usr/lib/aarch64-linux-gnu/ld-linux-aarch64.so.1]
+    79 ( 0.03%)  ???:std::sys::pal::unix::stack_overflow::imp::make_handler [/work/broken-app/target/release/demo]
+    78 ( 0.03%)  ./elf/./elf/dl-error-skeleton.c:_dl_catch_exception'2 [/usr/lib/aarch64-linux-gnu/ld-linux-aarch64.so.1]
+    78 ( 0.03%)  ./elf/./get-dynamic-info.h:dl_main [/usr/lib/aarch64-linux-gnu/ld-linux-aarch64.so.1]
+    77 ( 0.03%)  ./elf/./elf/dl-fini.c:_dl_fini'2 [/usr/lib/aarch64-linux-gnu/ld-linux-aarch64.so.1]
+    77 ( 0.03%)  ./elf/./elf/dl-tls.c:_dl_determine_tlsoffset'2 [/usr/lib/aarch64-linux-gnu/ld-linux-aarch64.so.1]
+    77 ( 0.03%)  ./libio/./libio/genops.c:_IO_flush_all_lockp [/usr/lib/aarch64-linux-gnu/libc.so.6]
+    76 ( 0.03%)  ./libio/./libio/libioP.h:getdelim'2
+    74 ( 0.03%)  ./malloc/./malloc/malloc.c:sysmalloc [/usr/lib/aarch64-linux-gnu/libc.so.6]
+    73 ( 0.03%)  ./elf/./elf/rtld.c:_dl_start'2 [/usr/lib/aarch64-linux-gnu/ld-linux-aarch64.so.1]
+    72 ( 0.03%)  ./elf/./elf/dl-runtime.c:_dl_fixup'2 [/usr/lib/aarch64-linux-gnu/ld-linux-aarch64.so.1]
+    70 ( 0.03%)  ./elf/./elf/dl-minimal-malloc.c:__minimal_calloc [/usr/lib/aarch64-linux-gnu/ld-linux-aarch64.so.1]
+    69 ( 0.03%)  ./posix/./posix/register-atfork.c:__unregister_atfork [/usr/lib/aarch64-linux-gnu/libc.so.6]
+    68 ( 0.03%)  ./string/../sysdeps/aarch64/nptl/../memset.S:tcache_init.part.0
+    67 ( 0.03%)  ./libio/./libio/genops.c:_IO_cleanup'2 [/usr/lib/aarch64-linux-gnu/libc.so.6]
+    67 ( 0.03%)  ???:<std::sync::once::Once>::call_once::<std::rt::cleanup::{closure#0}>::{closure#0} [/work/broken-app/target/release/demo]
+    66 ( 0.03%)  ./elf/./elf/dl-load.c:_dl_dst_count [/usr/lib/aarch64-linux-gnu/ld-linux-aarch64.so.1]
+    66 ( 0.03%)  ./elf/./elf/dl-minimal.c:lookup_malloc_symbol'2 [/usr/lib/aarch64-linux-gnu/ld-linux-aarch64.so.1]
+    66 ( 0.03%)  ???:__rustc::__rdl_alloc [/work/broken-app/target/release/demo]
+    64 ( 0.03%)  ./elf/./elf/dl-deps.c:openaux [/usr/lib/aarch64-linux-gnu/ld-linux-aarch64.so.1]
+    64 ( 0.03%)  ???:alloc::raw_vec::RawVecInner<A>::finish_grow [/work/broken-app/target/release/demo]
+    63 ( 0.02%)  ./elf/../sysdeps/generic/ldsodefs.h:_dl_relocate_object'2
+    63 ( 0.02%)  ./elf/./dl-map-segments.h:_dl_map_object_from_fd [/usr/lib/aarch64-linux-gnu/ld-linux-aarch64.so.1]
+    63 ( 0.02%)  ./elf/./elf/dl-minimal-malloc.c:__minimal_malloc'2 [/usr/lib/aarch64-linux-gnu/ld-linux-aarch64.so.1]
+    63 ( 0.02%)  ???:std::rt::lang_start_internal [/work/broken-app/target/release/demo]
+    62 ( 0.02%)  ./elf/./dl-load.h:_dl_map_object_from_fd'2
+    62 ( 0.02%)  ???:<std::sys::sync::once::futex::Once>::call [/work/broken-app/target/release/demo]
+    61 ( 0.02%)  ./elf/./elf/dl-hwcaps.c:copy_hwcaps'2 [/usr/lib/aarch64-linux-gnu/ld-linux-aarch64.so.1]
+    61 ( 0.02%)  ./elf/./elf/rtld.c:_dl_new_object
+    60 ( 0.02%)  ./elf/./elf/rtld.c:init_tls [/usr/lib/aarch64-linux-gnu/ld-linux-aarch64.so.1]
+    59 ( 0.02%)  ???:std::rt::lang_start_internal'2 [/work/broken-app/target/release/demo]
+    58 ( 0.02%)  ./elf/../sysdeps/unix/sysv/linux/dl-sysdep.c:_dl_sysdep_parse_arguments [/usr/lib/aarch64-linux-gnu/ld-linux-aarch64.so.1]
+    58 ( 0.02%)  ./elf/./elf/dl-load.c:_dl_important_hwcaps
+    57 ( 0.02%)  ./elf/./elf/dl-load.c:fillin_rpath.isra.0 [/usr/lib/aarch64-linux-gnu/ld-linux-aarch64.so.1]
+    57 ( 0.02%)  ./libio/./libio/genops.c:_IO_flush_all_lockp'2 [/usr/lib/aarch64-linux-gnu/libc.so.6]
+    56 ( 0.02%)  ./elf/./elf/rtld.c:_dl_relocate_object'2
+    56 ( 0.02%)  ./malloc/./malloc/malloc.c:alloc_perturb [/usr/lib/aarch64-linux-gnu/libc.so.6]
+    56 ( 0.02%)  ???:std::sys::pal::unix::stack_overflow::imp::drop_handler [/work/broken-app/target/release/demo]
+    55 ( 0.02%)  ./elf/../sysdeps/nptl/dl-mutex.c:__rtld_mutex_init [/usr/lib/aarch64-linux-gnu/ld-linux-aarch64.so.1]
+    55 ( 0.02%)  ./elf/./elf/dl-audit.c:_dl_audit_objclose [/usr/lib/aarch64-linux-gnu/ld-linux-aarch64.so.1]
+    55 ( 0.02%)  ./elf/./elf/dl-hwcaps_split.c:_dl_hwcaps_split_masked [/usr/lib/aarch64-linux-gnu/ld-linux-aarch64.so.1]
+    55 ( 0.02%)  ./io/../sysdeps/unix/sysv/linux/poll.c:poll [/usr/lib/aarch64-linux-gnu/libc.so.6]
+    54 ( 0.02%)  ./elf/../sysdeps/posix/dl-fileid.h:_dl_map_object_from_fd
+    54 ( 0.02%)  ./misc/../sysdeps/unix/syscall-template.S:mprotect [/usr/lib/aarch64-linux-gnu/ld-linux-aarch64.so.1]
+    53 ( 0.02%)  ./elf/./elf/rtld.c:_dl_map_object_deps
+    52 ( 0.02%)  ./libio/./libio/genops.c:__GI__IO_un_link.part.0 [/usr/lib/aarch64-linux-gnu/libc.so.6]
+    51 ( 0.02%)  ./elf/./elf/dl-error-skeleton.c:_dl_catch_exception [/usr/lib/aarch64-linux-gnu/ld-linux-aarch64.so.1]
+    50 ( 0.02%)  ./elf/./elf/dl-load.c:_dl_load_cache_lookup
+    50 ( 0.02%)  ./nptl/./nptl/pthread_getattr_np.c:pthread_getattr_np@@GLIBC_2.32 [/usr/lib/aarch64-linux-gnu/libc.so.6]
+    50 ( 0.02%)  ???:std::sys::pal::unix::stack_overflow::imp::drop_handler'2 [/work/broken-app/target/release/demo]
+    49 ( 0.02%)  ./elf/./elf/dl-init.c:call_init [/usr/lib/aarch64-linux-gnu/ld-linux-aarch64.so.1]
+    48 ( 0.02%)  ./elf/../sysdeps/aarch64/dl-irel.h:_dl_lookup_symbol_x'2
+    48 ( 0.02%)  ./malloc/./malloc/scratch_buffer_set_array_size.c:__libc_scratch_buffer_set_array_size [/usr/lib/aarch64-linux-gnu/ld-linux-aarch64.so.1]
+    48 ( 0.02%)  ./misc/../sysdeps/unix/syscall-template.S:munmap [/usr/lib/aarch64-linux-gnu/ld-linux-aarch64.so.1]
+    48 ( 0.02%)  ./string/./string/strdup.c:strdup [/usr/lib/aarch64-linux-gnu/ld-linux-aarch64.so.1]
+    47 ( 0.02%)  ./misc/./misc/sbrk.c:sbrk [/usr/lib/aarch64-linux-gnu/libc.so.6]
+    46 ( 0.02%)  ./elf/./elf/dl-tls.c:_dl_add_to_slotinfo'2 [/usr/lib/aarch64-linux-gnu/ld-linux-aarch64.so.1]
+    46 ( 0.02%)  ???:std::sys::pal::unix::stack_overflow::thread_info::set_current_info'2 [/work/broken-app/target/release/demo]
+    45 ( 0.02%)  ???:<std::io::default_write_fmt::Adapter<std::io::stdio::StdoutLock> as core::fmt::Write>::write_str [/work/broken-app/target/release/demo]
+    44 ( 0.02%)  ./elf/../sysdeps/generic/ldsodefs.h:_dl_check_map_versions'2
+    44 ( 0.02%)  ./nptl/./nptl/pthread_mutex_conf.c:__pthread_tunables_init [/usr/lib/aarch64-linux-gnu/libc.so.6]
+    44 ( 0.02%)  ???:<i64 as core::fmt::Display>::fmt [/work/broken-app/target/release/demo]
+    44 ( 0.02%)  ???:std::sys::random::linux::getrandom [/work/broken-app/target/release/demo]
+    43 ( 0.02%)  ./elf/./elf/dl-deps.c:_dl_catch_exception
+    43 ( 0.02%)  ./malloc/./malloc/malloc.c:ptmalloc_init.part.0
+    43 ( 0.02%)  ./stdlib/./stdlib/cxa_atexit.c:__new_exitfn [/usr/lib/aarch64-linux-gnu/libc.so.6]
+    42 ( 0.02%)  ./elf/../sysdeps/generic/dl-hash.h:__rtld_malloc_init_real
+    42 ( 0.02%)  ./io/../sysdeps/unix/sysv/linux/read_nocancel.c:__read_nocancel [/usr/lib/aarch64-linux-gnu/ld-linux-aarch64.so.1]
+    42 ( 0.02%)  ./string/../sysdeps/aarch64/strrchr.S:rindex [/usr/lib/aarch64-linux-gnu/libc.so.6]
+    41 ( 0.02%)  ./elf/./elf/dl-cache.c:_dl_load_cache_lookup [/usr/lib/aarch64-linux-gnu/ld-linux-aarch64.so.1]
+    41 ( 0.02%)  ./libio/./libio/fileops.c:_IO_file_fopen@@GLIBC_2.17'2 [/usr/lib/aarch64-linux-gnu/libc.so.6]
+    40 ( 0.02%)  ./elf/../include/rtld-malloc.h:__minimal_calloc
+    40 ( 0.02%)  ./elf/../sysdeps/nptl/dl-tls_init_tp.c:__tls_init_tp [/usr/lib/aarch64-linux-gnu/ld-linux-aarch64.so.1]
+    40 ( 0.02%)  ./io/../sysdeps/unix/sysv/linux/stat64.c:stat [/usr/lib/aarch64-linux-gnu/ld-linux-aarch64.so.1]
+    39 ( 0.02%)  ./elf/./elf/dl-audit.c:_dl_audit_objopen [/usr/lib/aarch64-linux-gnu/ld-linux-aarch64.so.1]
+    39 ( 0.02%)  ./elf/./elf/dl-tls.c:_dl_allocate_tls_storage [/usr/lib/aarch64-linux-gnu/ld-linux-aarch64.so.1]
+    39 ( 0.02%)  ./stdio-common/./stdio-common/isoc99_sscanf.c:__isoc99_sscanf [/usr/lib/aarch64-linux-gnu/libc.so.6]
+    39 ( 0.02%)  ???:init_have_lse_atomics [/usr/lib/aarch64-linux-gnu/ld-linux-aarch64.so.1]
+    38 ( 0.01%)  ./elf/./elf/dl-tls.c:_dl_allocate_tls_init [/usr/lib/aarch64-linux-gnu/ld-linux-aarch64.so.1]
+    37 ( 0.01%)  ./elf/./elf/dl-tls.c:_dl_tls_static_surplus_init [/usr/lib/aarch64-linux-gnu/ld-linux-aarch64.so.1]
+    37 ( 0.01%)  ./elf/./elf/rtld.c:do_preload [/usr/lib/aarch64-linux-gnu/ld-linux-aarch64.so.1]
+    37 ( 0.01%)  ./nptl/./nptl/pthread_getattr_np.c:pthread_getattr_np@@GLIBC_2.32'2 [/usr/lib/aarch64-linux-gnu/libc.so.6]
+    37 ( 0.01%)  ./stdlib/./stdlib/exit.c:__run_exit_handlers'2 [/usr/lib/aarch64-linux-gnu/libc.so.6]
+    37 ( 0.01%)  ???:hashbrown::raw::RawTable<T,A>::with_capacity_in [/work/broken-app/target/release/demo]
+    36 ( 0.01%)  ./elf/./elf/dl-load.c:cache_rpath [/usr/lib/aarch64-linux-gnu/ld-linux-aarch64.so.1]
+    36 ( 0.01%)  ./nptl/./nptl/pthread_mutex_lock.c:pthread_mutex_lock@@GLIBC_2.17 [/usr/lib/aarch64-linux-gnu/libc.so.6]
+    36 ( 0.01%)  ???:free
+    35 ( 0.01%)  ./csu/../csu/libc-start.c:__internal_atexit
+    35 ( 0.01%)  ./elf/./elf/dl-cache.c:_dl_sysdep_read_whole_file
+    35 ( 0.01%)  ./stdlib/./stdlib/exit.c:_dl_fini
+    35 ( 0.01%)  ./string/./string/strstr.c:strstr [/usr/lib/aarch64-linux-gnu/libc.so.6]
+    34 ( 0.01%)  ./libio/./libio/filedoalloc.c:_IO_file_doallocate [/usr/lib/aarch64-linux-gnu/libc.so.6]
+    34 ( 0.01%)  ./libio/./libio/fileops.c:_IO_file_open [/usr/lib/aarch64-linux-gnu/libc.so.6]
+    34 ( 0.01%)  ./nptl/./nptl/pthread_getattr_np.c:__fopen_internal
+    34 ( 0.01%)  ./stdlib/../sysdeps/unix/sysv/linux/getrandom.c:getrandom [/usr/lib/aarch64-linux-gnu/libc.so.6]
+    33 ( 0.01%)  ./elf/../include/rtld-malloc.h:_dl_new_object'2
+    33 ( 0.01%)  ./elf/../sysdeps/generic/ldsodefs.h:_dl_new_object'2
+    33 ( 0.01%)  ./elf/../sysdeps/unix/sysv/linux/dl-sysdep.c:_dl_sysdep_start [/usr/lib/aarch64-linux-gnu/ld-linux-aarch64.so.1]
+    33 ( 0.01%)  ./elf/./elf/dl-audit.c:_dl_audit_activity_nsid [/usr/lib/aarch64-linux-gnu/ld-linux-aarch64.so.1]
+    33 ( 0.01%)  ./elf/./elf/rtld.c:dl_main [/usr/lib/aarch64-linux-gnu/ld-linux-aarch64.so.1]
+    33 ( 0.01%)  ./malloc/./malloc/malloc.c:calloc [/usr/lib/aarch64-linux-gnu/libc.so.6]
+    33 ( 0.01%)  ./nptl/./nptl/pthread_attr_destroy.c:pthread_attr_destroy [/usr/lib/aarch64-linux-gnu/libc.so.6]
+    33 ( 0.01%)  ./signal/../sysdeps/posix/signal.c:signal [/usr/lib/aarch64-linux-gnu/libc.so.6]
+    32 ( 0.01%)  ./libio/./libio/fileops.c:_IO_file_close_it@@GLIBC_2.17 [/usr/lib/aarch64-linux-gnu/libc.so.6]
+    32 ( 0.01%)  ./libio/./libio/libioP.h:__underflow
+    30 ( 0.01%)  ./io/../sysdeps/unix/sysv/linux/fstat64.c:fstat [/usr/lib/aarch64-linux-gnu/ld-linux-aarch64.so.1]
+    30 ( 0.01%)  ./libio/./libio/libioP.h:fclose@@GLIBC_2.17 [/usr/lib/aarch64-linux-gnu/libc.so.6]
+    30 ( 0.01%)  ./signal/./signal/sigaction.c:sigaction [/usr/lib/aarch64-linux-gnu/libc.so.6]
+    30 ( 0.01%)  ./string/../sysdeps/aarch64/nptl/../memset.S:__GI_memset [/usr/lib/aarch64-linux-gnu/libc.so.6]
+    29 ( 0.01%)  ./csu/../sysdeps/nptl/libc_start_call_main.h:(below main) [/usr/lib/aarch64-linux-gnu/libc.so.6]
+    29 ( 0.01%)  ./elf/./elf/dl-hwcaps.c:_dl_important_hwcaps [/usr/lib/aarch64-linux-gnu/ld-linux-aarch64.so.1]
+    29 ( 0.01%)  ./elf/./elf/dl-object.c:__minimal_malloc
+    29 ( 0.01%)  ./libio/./libio/genops.c:__GI__IO_un_link.part.0'2 [/usr/lib/aarch64-linux-gnu/libc.so.6]
+    29 ( 0.01%)  ./nptl/./nptl/pthread_mutex_unlock.c:__pthread_mutex_unlock_usercnt [/usr/lib/aarch64-linux-gnu/libc.so.6]
+    29 ( 0.01%)  ???:<core::fmt::builders::DebugSet>::entry [/work/broken-app/target/release/demo]
+    29 ( 0.01%)  ???:broken_app::sum_even [/work/broken-app/target/release/demo]
+    28 ( 0.01%)  ./csu/./csu/init-first.c:_init_first [/usr/lib/aarch64-linux-gnu/libc.so.6]
+    28 ( 0.01%)  ./elf/../include/rtld-malloc.h:_dl_check_map_versions'2
+    28 ( 0.01%)  ./elf/../sysdeps/nptl/pthread_early_init.h:__libc_early_init
+    28 ( 0.01%)  ./elf/./elf/dl-call-libc-early-init.c:_dl_call_libc_early_init [/usr/lib/aarch64-linux-gnu/ld-linux-aarch64.so.1]
+    28 ( 0.01%)  ./elf/./elf/dl-debug.c:_dl_debug_initialize [/usr/lib/aarch64-linux-gnu/ld-linux-aarch64.so.1]
+    28 ( 0.01%)  ./elf/./elf/dl-debug.c:_dl_debug_update [/usr/lib/aarch64-linux-gnu/ld-linux-aarch64.so.1]
+    28 ( 0.01%)  ./elf/./elf/dl-load.c:expand_dynamic_string_token [/usr/lib/aarch64-linux-gnu/ld-linux-aarch64.so.1]
+    28 ( 0.01%)  ./libio/./libio/libioP.h:_IO_file_underflow@@GLIBC_2.17 [/usr/lib/aarch64-linux-gnu/libc.so.6]
+    28 ( 0.01%)  ./malloc/./malloc/arena.c:free'2
+    28 ( 0.01%)  ./string/../sysdeps/aarch64/nptl/../memset.S:calloc
+    28 ( 0.01%)  ???:broken_app::algo::slow_dedup [/work/broken-app/target/release/demo]
+    27 ( 0.01%)  ./elf/../sysdeps/unix/sysv/linux/aarch64/cpu-features.c:__GI___tunables_init
+    27 ( 0.01%)  ./elf/./elf/dl-find_object.c:_dlfo_process_initial [/usr/lib/aarch64-linux-gnu/ld-linux-aarch64.so.1]
+    27 ( 0.01%)  ./elf/./elf/dl-object.c:_dl_new_object [/usr/lib/aarch64-linux-gnu/ld-linux-aarch64.so.1]
+    27 ( 0.01%)  ???:alloc::raw_vec::RawVecInner<A>::reserve::do_reserve_and_handle [/work/broken-app/target/release/demo]
+    27 ( 0.01%)  ???:alloc::raw_vec::RawVecInner<A>::reserve::do_reserve_and_handle'2 [/work/broken-app/target/release/demo]
+    26 ( 0.01%)  ./elf/../sysdeps/generic/ldsodefs.h:_dl_relocate_object [/usr/lib/aarch64-linux-gnu/ld-linux-aarch64.so.1]
+    26 ( 0.01%)  ./string/../sysdeps/aarch64/multiarch/../memcpy.S:__GI_memmove [/usr/lib/aarch64-linux-gnu/libc.so.6]
+    26 ( 0.01%)  ???:malloc
+    25 ( 0.01%)  ???:broken_app::leak_buffer'2 [/work/broken-app/target/release/demo]
+    25 ( 0.01%)  ???:broken_app::normalize [/work/broken-app/target/release/demo]
+    24 ( 0.01%)  ./elf/./elf/dl-misc.c:_dl_sysdep_read_whole_file [/usr/lib/aarch64-linux-gnu/ld-linux-aarch64.so.1]
+    24 ( 0.01%)  ./elf/./elf/rtld.c:_dl_add_to_slotinfo'2
+    24 ( 0.01%)  ./elf/./elf/rtld.c:handle_preload_list'2 [/usr/lib/aarch64-linux-gnu/ld-linux-aarch64.so.1]
+    24 ( 0.01%)  ./io/../sysdeps/unix/sysv/linux/close_nocancel.c:__GI___close_nocancel [/usr/lib/aarch64-linux-gnu/ld-linux-aarch64.so.1]
+    24 ( 0.01%)  ./malloc/./malloc/arena.c:_int_malloc
+    24 ( 0.01%)  ./nptl/./nptl/pthread_attr_extension.c:__pthread_attr_extension [/usr/lib/aarch64-linux-gnu/libc.so.6]
+    24 ( 0.01%)  ???:__init_cpu_features [/work/broken-app/target/release/demo]
+    24 ( 0.01%)  ???:std::io::stdio::_print [/work/broken-app/target/release/demo]
+    23 ( 0.01%)  ./elf/./elf/dl-fini.c:_dl_fini [/usr/lib/aarch64-linux-gnu/ld-linux-aarch64.so.1]
+    23 ( 0.01%)  ./elf/./elf/rtld.c:handle_preload_list [/usr/lib/aarch64-linux-gnu/ld-linux-aarch64.so.1]
+    23 ( 0.01%)  ???:<str>::to_lowercase [/work/broken-app/target/release/demo]
+    23 ( 0.01%)  ???:demo::main [/work/broken-app/target/release/demo]
+    22 ( 0.01%)  ./csu/../csu/libc-start.c:__init_cpu_features
+    22 ( 0.01%)  ./elf/../sysdeps/aarch64/dl-irel.h:_dl_relocate_object'2
+    22 ( 0.01%)  ./elf/./elf/dl-tls.c:_dl_tls_initial_modid_limit_setup'2 [/usr/lib/aarch64-linux-gnu/ld-linux-aarch64.so.1]
+    22 ( 0.01%)  ./elf/./elf/dl-tunables.c:do_tunable_update_val [/usr/lib/aarch64-linux-gnu/ld-linux-aarch64.so.1]
+    22 ( 0.01%)  ./libio/./libio/fileops.c:_IO_file_fopen@@GLIBC_2.17 [/usr/lib/aarch64-linux-gnu/libc.so.6]
+    22 ( 0.01%)  ./misc/./misc/init-misc.c:__init_misc [/usr/lib/aarch64-linux-gnu/libc.so.6]
+    22 ( 0.01%)  ???:0x0000000000000600 [/usr/libexec/valgrind/vgpreload_core-arm64-linux.so]
+    22 ( 0.01%)  ???:0x0000000000002c50 [/usr/lib/aarch64-linux-gnu/libgcc_s.so.1]
+    22 ( 0.01%)  ???:std::rt::lang_start::{{closure}} [/work/broken-app/target/release/demo]
+    21 ( 0.01%)  ./csu/../csu/libc-start.c:__libc_start_main@@GLIBC_2.34'2 [/usr/lib/aarch64-linux-gnu/libc.so.6]
+    21 ( 0.01%)  ./elf/../sysdeps/unix/sysv/linux/aarch64/cpu-features.c:_dl_sysdep_start [/usr/lib/aarch64-linux-gnu/ld-linux-aarch64.so.1]
+    21 ( 0.01%)  ./elf/./elf/dl-minimal.c:lookup_malloc_symbol [/usr/lib/aarch64-linux-gnu/ld-linux-aarch64.so.1]
+    21 ( 0.01%)  ./elf/./elf/rtld.c:_dl_start [/usr/lib/aarch64-linux-gnu/ld-linux-aarch64.so.1]
+    21 ( 0.01%)  ./posix/../sysdeps/unix/sysv/linux/aarch64/sysconf.c:sysconf [/usr/lib/aarch64-linux-gnu/libc.so.6]
+    21 ( 0.01%)  ???:<alloc::vec::Vec<T,A> as core::fmt::Debug>::fmt [/work/broken-app/target/release/demo]
+    21 ( 0.01%)  ???:<core::fmt::Formatter>::debug_list [/work/broken-app/target/release/demo]
+    21 ( 0.01%)  ???:<core::fmt::Formatter>::pad [/work/broken-app/target/release/demo]
+    21 ( 0.01%)  ???:<std::sys::sync::once::futex::Once>::call'2 [/work/broken-app/target/release/demo]
+    21 ( 0.01%)  ???:__rustc::__rdl_realloc [/work/broken-app/target/release/demo]
+    20 ( 0.01%)  ./ctype/./ctype/ctype-info.c:__ctype_init [/usr/lib/aarch64-linux-gnu/libc.so.6]
+    20 ( 0.01%)  ./elf/../sysdeps/nptl/dl-tls_init_tp.c:__tls_pre_init_tp [/usr/lib/aarch64-linux-gnu/ld-linux-aarch64.so.1]
+    20 ( 0.01%)  ./elf/../sysdeps/unix/sysv/linux/rseq-internal.h:__tls_init_tp
+    20 ( 0.01%)  ./elf/./dl-sym-post.h:_dl_lookup_symbol_x
+    20 ( 0.01%)  ./elf/./elf/rtld.c:_dl_add_to_slotinfo
+    20 ( 0.01%)  ./libio/./libio/fileops.c:_IO_setb
+
+--------------------------------------------------------------------------------
+The following files chosen for auto-annotation could not be found:
+--------------------------------------------------------------------------------
+  ./csu/../csu/libc-start.c
+  ./csu/../sysdeps/nptl/libc_start_call_main.h
+  ./csu/./csu/init-first.c
+  ./ctype/./ctype/ctype-info.c
+  ./elf/../include/rtld-malloc.h
+  ./elf/../sysdeps/aarch64/dl-irel.h
+  ./elf/../sysdeps/aarch64/dl-machine.h
+  ./elf/../sysdeps/aarch64/dl-trampoline.S
+  ./elf/../sysdeps/generic/dl-hash.h
+  ./elf/../sysdeps/generic/dl-new-hash.h
+  ./elf/../sysdeps/generic/dl-protected.h
+  ./elf/../sysdeps/generic/ldsodefs.h
+  ./elf/../sysdeps/nptl/dl-mutex.c
+  ./elf/../sysdeps/nptl/dl-tls_init_tp.c
+  ./elf/../sysdeps/nptl/pthread_early_init.h
+  ./elf/../sysdeps/posix/dl-fileid.h
+  ./elf/../sysdeps/unix/sysv/linux/aarch64/cpu-features.c
+  ./elf/../sysdeps/unix/sysv/linux/dl-parse_auxv.h
+  ./elf/../sysdeps/unix/sysv/linux/dl-sysdep.c
+  ./elf/../sysdeps/unix/sysv/linux/rseq-internal.h
+  ./elf/./dl-find_object.h
+  ./elf/./dl-load.h
+  ./elf/./dl-map-segments.h
+  ./elf/./dl-sym-post.h
+  ./elf/./elf/dl-audit.c
+  ./elf/./elf/dl-cache.c
+  ./elf/./elf/dl-call-libc-early-init.c
+  ./elf/./elf/dl-call_fini.c
+  ./elf/./elf/dl-debug.c
+  ./elf/./elf/dl-deps.c
+  ./elf/./elf/dl-environ.c
+  ./elf/./elf/dl-error-skeleton.c
+  ./elf/./elf/dl-find_object.c
+  ./elf/./elf/dl-fini.c
+  ./elf/./elf/dl-hwcaps.c
+  ./elf/./elf/dl-hwcaps_split.c
+  ./elf/./elf/dl-init.c
+  ./elf/./elf/dl-load.c
+  ./elf/./elf/dl-lookup-direct.c
+  ./elf/./elf/dl-lookup.c
+  ./elf/./elf/dl-minimal-malloc.c
+  ./elf/./elf/dl-minimal.c
+  ./elf/./elf/dl-misc.c
+  ./elf/./elf/dl-object.c
+  ./elf/./elf/dl-reloc.c
+  ./elf/./elf/dl-runtime.c
+  ./elf/./elf/dl-setup_hash.c
+  ./elf/./elf/dl-sort-maps.c
+  ./elf/./elf/dl-tls.c
+  ./elf/./elf/dl-tunables.c
+  ./elf/./elf/dl-tunables.h
+  ./elf/./elf/dl-version.c
+  ./elf/./elf/do-rel.h
+  ./elf/./elf/get-dynamic-info.h
+  ./elf/./elf/rtld.c
+  ./elf/./get-dynamic-info.h
+  ./io/../sysdeps/unix/sysv/linux/close_nocancel.c
+  ./io/../sysdeps/unix/sysv/linux/fstat64.c
+  ./io/../sysdeps/unix/sysv/linux/fstatat64.c
+  ./io/../sysdeps/unix/sysv/linux/open64_nocancel.c
+  ./io/../sysdeps/unix/sysv/linux/poll.c
+  ./io/../sysdeps/unix/sysv/linux/read_nocancel.c
+  ./io/../sysdeps/unix/sysv/linux/stat64.c
+  ./io/../sysdeps/unix/sysv/linux/write.c
+  ./libio/./libio/filedoalloc.c
+  ./libio/./libio/fileops.c
+  ./libio/./libio/genops.c
+  ./libio/./libio/iogetdelim.c
+  ./libio/./libio/libioP.h
+  ./libio/./libio/strops.c
+  ./malloc/./malloc/arena.c
+  ./malloc/./malloc/malloc.c
+  ./malloc/./malloc/scratch_buffer_set_array_size.c
+  ./misc/../sysdeps/unix/syscall-template.S
+  ./misc/../sysdeps/unix/sysv/linux/mmap64.c
+  ./misc/./misc/getauxval.c
+  ./misc/./misc/init-misc.c
+  ./misc/./misc/sbrk.c
+  ./nptl/./nptl/libc-cleanup.c
+  ./nptl/./nptl/pthread_attr_destroy.c
+  ./nptl/./nptl/pthread_attr_extension.c
+  ./nptl/./nptl/pthread_getattr_np.c
+  ./nptl/./nptl/pthread_mutex_conf.c
+  ./nptl/./nptl/pthread_mutex_lock.c
+  ./nptl/./nptl/pthread_mutex_unlock.c
+  ./posix/../sysdeps/unix/sysv/linux/aarch64/sysconf.c
+  ./posix/./posix/register-atfork.c
+  ./setjmp/../sysdeps/aarch64/setjmp.S
+  ./signal/../sysdeps/posix/signal.c
+  ./signal/../sysdeps/unix/sysv/linux/libc_sigaction.c
+  ./signal/./signal/sigaction.c
+  ./stdio-common/../include/scratch_buffer.h
+  ./stdio-common/../libio/strfile.h
+  ./stdio-common/./stdio-common/getline.c
+  ./stdio-common/./stdio-common/isoc99_sscanf.c
+  ./stdio-common/./stdio-common/vfscanf-internal.c
+  ./stdlib/../stdlib/strtol.c
+  ./stdlib/../stdlib/strtol_l.c
+  ./stdlib/../sysdeps/unix/sysv/linux/getrandom.c
+  ./stdlib/./stdlib/cxa_atexit.c
+  ./stdlib/./stdlib/cxa_finalize.c
+  ./stdlib/./stdlib/exit.c
+  ./string/../sysdeps/aarch64/multiarch/../memchr.S
+  ./string/../sysdeps/aarch64/multiarch/../memcpy.S
+  ./string/../sysdeps/aarch64/multiarch/../strlen.S
+  ./string/../sysdeps/aarch64/multiarch/strlen_asimd.S
+  ./string/../sysdeps/aarch64/nptl/../memset.S
+  ./string/../sysdeps/aarch64/rawmemchr.S
+  ./string/../sysdeps/aarch64/strchr.S
+  ./string/../sysdeps/aarch64/strcmp.S
+  ./string/../sysdeps/aarch64/strrchr.S
+  ./string/./string/strcspn.c
+  ./string/./string/strdup.c
+  ./string/./string/strstr.c
+

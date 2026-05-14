@@ -1,0 +1,137 @@
+    Updating crates.io index
+ Downloading crates ...
+  Downloaded anes v0.1.6
+  Downloaded plotters-backend v0.3.7
+  Downloaded cfg-if v1.0.4
+  Downloaded is-terminal v0.4.17
+  Downloaded ciborium-ll v0.2.2
+  Downloaded same-file v1.0.6
+  Downloaded cast v0.3.0
+  Downloaded itoa v1.0.15
+  Downloaded clap_lex v0.7.6
+  Downloaded ciborium-io v0.2.2
+  Downloaded anstyle v1.0.13
+  Downloaded autocfg v1.5.0
+  Downloaded walkdir v2.5.0
+  Downloaded plotters-svg v0.3.7
+  Downloaded either v1.15.0
+  Downloaded crossbeam-deque v0.8.6
+  Downloaded oorandom v11.1.5
+  Downloaded tinytemplate v1.2.1
+  Downloaded ryu v1.0.20
+  Downloaded crossbeam-utils v0.8.21
+  Downloaded crossbeam-epoch v0.9.18
+  Downloaded quote v1.0.42
+  Downloaded criterion-plot v0.5.0
+  Downloaded ciborium v0.2.2
+  Downloaded once_cell v1.21.3
+  Downloaded unicode-ident v1.0.22
+  Downloaded clap v4.5.53
+  Downloaded serde_derive v1.0.228
+  Downloaded half v2.7.1
+  Downloaded serde_core v1.0.228
+  Downloaded proc-macro2 v1.0.103
+  Downloaded num-traits v0.2.19
+  Downloaded rayon-core v1.13.0
+  Downloaded zerocopy-derive v0.8.31
+  Downloaded memchr v2.7.6
+  Downloaded serde v1.0.228
+  Downloaded criterion v0.5.1
+  Downloaded itertools v0.10.5
+  Downloaded plotters v0.3.7
+  Downloaded aho-corasick v1.1.4
+  Downloaded serde_json v1.0.145
+  Downloaded regex v1.12.2
+  Downloaded clap_builder v4.5.53
+  Downloaded rayon v1.11.0
+  Downloaded zerocopy v0.8.31
+  Downloaded syn v2.0.111
+  Downloaded regex-syntax v0.8.8
+  Downloaded regex-automata v0.4.13
+  Downloaded libc v0.2.178
+   Compiling proc-macro2 v1.0.103
+   Compiling unicode-ident v1.0.22
+   Compiling quote v1.0.42
+   Compiling serde_core v1.0.228
+   Compiling crossbeam-utils v0.8.21
+   Compiling zerocopy v0.8.31
+   Compiling serde v1.0.228
+   Compiling autocfg v1.5.0
+   Compiling either v1.15.0
+   Compiling cfg-if v1.0.4
+   Compiling serde_json v1.0.145
+   Compiling rayon-core v1.13.0
+   Compiling libc v0.2.178
+   Compiling num-traits v0.2.19
+   Compiling memchr v2.7.6
+   Compiling anstyle v1.0.13
+   Compiling itoa v1.0.15
+   Compiling clap_lex v0.7.6
+   Compiling ryu v1.0.20
+   Compiling ciborium-io v0.2.2
+   Compiling crossbeam-epoch v0.9.18
+   Compiling plotters-backend v0.3.7
+   Compiling regex-syntax v0.8.8
+   Compiling clap_builder v4.5.53
+   Compiling itertools v0.10.5
+   Compiling cast v0.3.0
+   Compiling crossbeam-deque v0.8.6
+   Compiling plotters-svg v0.3.7
+   Compiling same-file v1.0.6
+   Compiling is-terminal v0.4.17
+   Compiling syn v2.0.111
+   Compiling regex-automata v0.4.13
+   Compiling walkdir v2.5.0
+   Compiling criterion-plot v0.5.0
+   Compiling plotters v0.3.7
+   Compiling anes v0.1.6
+   Compiling clap v4.5.53
+   Compiling rayon v1.11.0
+   Compiling oorandom v11.1.5
+   Compiling once_cell v1.21.3
+   Compiling broken-app v0.1.0 (/work/broken-app)
+   Compiling regex v1.12.2
+   Compiling zerocopy-derive v0.8.31
+   Compiling serde_derive v1.0.228
+   Compiling half v2.7.1
+   Compiling tinytemplate v1.2.1
+   Compiling ciborium-ll v0.2.2
+   Compiling ciborium v0.2.2
+   Compiling criterion v0.5.1
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 32.21s
+     Running unittests src/lib.rs (target/debug/deps/broken_app-304e8b1438a718f1)
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running unittests src/bin/demo.rs (target/debug/deps/demo-5eda75142db377f3)
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests/integration.rs (target/debug/deps/integration-310ec0eb5271551d)
+
+running 12 tests
+test fib_small_numbers ... ok
+test sum_even_handles_empty_slice ... ok
+test counts_non_zero_bytes ... ok
+test average_positive_returns_zero_without_positive_values ... ok
+test averages_only_positive ... ok
+test normalize_all_whitespace ... ok
+test normalize_simple ... ok
+test use_after_free_regression ... ok
+test sums_even_numbers ... ok
+test race_increment_is_correct ... ok
+test dedup_preserves_uniques ... ok
+test reset_counter_clears_shared_state ... ok
+
+test result: ok. 12 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.07s
+
+   Doc-tests broken_app
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+

@@ -1,0 +1,21 @@
+   Compiling broken-app v0.1.0 (/Users/hot/projects/YP_module_5_rust-performance-tools/broken-app)
+warning: unused import: `Duration`
+ --> benches/baseline.rs:2:17
+  |
+2 | use std::time::{Duration, Instant};
+  |                 ^^^^^^^^
+  |
+  = note: `#[warn(unused_imports)]` (part of `#[warn(unused)]`) on by default
+
+warning: `broken-app` (bench "baseline") generated 1 warning (run `cargo fix --bench "baseline" -p broken-app` to apply 1 suggestion)
+    Finished `bench` profile [optimized] target(s) in 0.34s
+     Running benches/baseline.rs (target/release/deps/baseline-c33a0c87811da5e3)
+sum_even: 6.333µs
+slow_fib: 3.297334ms
+slow_dedup: 6.509917ms
+sum_even: 7.125µs
+slow_fib: 3.757708ms
+slow_dedup: 6.215084ms
+sum_even: 7.083µs
+slow_fib: 3.546708ms
+slow_dedup: 6.882416ms

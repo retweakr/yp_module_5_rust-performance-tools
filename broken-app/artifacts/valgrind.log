@@ -1,0 +1,72 @@
+==6752== Memcheck, a memory error detector
+==6752== Copyright (C) 2002-2022, and GNU GPL'd, by Julian Seward et al.
+==6752== Using Valgrind-3.19.0 and LibVEX; rerun with -h for copyright info
+==6752== Command: /tmp/linux-debug/debug/deps/integration-310ec0eb5271551d --nocapture
+==6752== 
+
+running 12 tests
+test averages_only_positive ... ok
+test dedup_preserves_uniques ... ok
+test average_positive_returns_zero_without_positive_values ... ok
+test normalize_simple ... ok
+test sum_even_handles_empty_slice ... ok
+test normalize_all_whitespace ... ok
+test fib_small_numbers ... ok
+test counts_non_zero_bytes ... ok
+test sums_even_numbers ... ok
+test use_after_free_regression ... ok
+test reset_counter_clears_shared_state ... ok
+test race_increment_is_correct ... ok
+
+test result: ok. 12 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.63s
+
+==6752== 
+==6752== HEAP SUMMARY:
+==6752==     in use at exit: 592 bytes in 2 blocks
+==6752==   total heap usage: 464 allocs, 462 frees, 62,707 bytes allocated
+==6752== 
+==6752== 48 bytes in 1 blocks are possibly lost in loss record 1 of 2
+==6752==    at 0x48417B4: malloc (vg_replace_malloc.c:381)
+==6752==    by 0x1BE70B: alloc (unix.rs:14)
+==6752==    by 0x1BE70B: alloc_impl (alloc.rs:151)
+==6752==    by 0x1BE70B: allocate (alloc.rs:214)
+==6752==    by 0x1BE70B: {closure#0}<std::thread::thread::Inner, std::alloc::System> (sync.rs:805)
+==6752==    by 0x1BE70B: allocate_for_layout<core::mem::maybe_uninit::MaybeUninit<std::thread::thread::Inner>, alloc::sync::{impl#17}::new_uninit_in::{closure_env#0}<std::thread::thread::Inner, std::alloc::System>, fn(*mut u8) -> *mut alloc::sync::ArcInner<core::mem::maybe_uninit::MaybeUninit<std::thread::thread::Inner>>> (sync.rs:2162)
+==6752==    by 0x1BE70B: new_uninit_in<std::thread::thread::Inner, std::alloc::System> (sync.rs:803)
+==6752==    by 0x1BE70B: <std::thread::thread::Thread>::new (thread.rs:102)
+==6752==    by 0x1CC12F: std::thread::current::init_current (current.rs:294)
+==6752==    by 0x1B3985: current_or_unnamed (current.rs:251)
+==6752==    by 0x1B3985: <std::sync::mpmc::context::Context>::new (context.rs:72)
+==6752==    by 0x149FBA: __rust_std_internal_init_fn (context.rs:43)
+==6752==    by 0x149FBA: call_once<fn() -> core::cell::Cell<core::option::Option<std::sync::mpmc::context::Context>>, ()> (function.rs:250)
+==6752==    by 0x149FBA: unwrap_or_else<core::cell::Cell<core::option::Option<std::sync::mpmc::context::Context>>, fn() -> core::cell::Cell<core::option::Option<std::sync::mpmc::context::Context>>> (option.rs:1067)
+==6752==    by 0x149FBA: <std::sys::thread_local::native::lazy::Storage<core::cell::Cell<core::option::Option<std::sync::mpmc::context::Context>>, ()>>::get_or_init_slow::<<std::sync::mpmc::context::Context>::with::CONTEXT::__rust_std_internal_init_fn> (lazy.rs:80)
+==6752==    by 0x161012: get_or_init<core::cell::Cell<core::option::Option<std::sync::mpmc::context::Context>>, (), fn() -> core::cell::Cell<core::option::Option<std::sync::mpmc::context::Context>>> (lazy.rs:62)
+==6752==    by 0x161012: {closure#0} (mod.rs:97)
+==6752==    by 0x161012: call_once<std::sync::mpmc::context::{impl#0}::with::CONTEXT::{constant#0}::{closure_env#0}, (core::option::Option<&mut core::option::Option<core::cell::Cell<core::option::Option<std::sync::mpmc::context::Context>>>>)> (function.rs:250)
+==6752==    by 0x161012: try_with<core::cell::Cell<core::option::Option<std::sync::mpmc::context::Context>>, std::sync::mpmc::context::{impl#0}::with::{closure_env#1}<std::sync::mpmc::list::{impl#3}::recv::{closure_env#1}<test::event::CompletedTest>, ()>, ()> (local.rs:512)
+==6752==    by 0x161012: with<std::sync::mpmc::list::{impl#3}::recv::{closure_env#1}<test::event::CompletedTest>, ()> (context.rs:53)
+==6752==    by 0x161012: <std::sync::mpmc::list::Channel<test::event::CompletedTest>>::recv (list.rs:442)
+==6752==    by 0x16DDA3: recv_deadline<test::event::CompletedTest> (mod.rs:1120)
+==6752==    by 0x16DDA3: recv_timeout<test::event::CompletedTest> (mod.rs:1052)
+==6752==    by 0x16DDA3: recv_timeout<test::event::CompletedTest> (mpsc.rs:909)
+==6752==    by 0x16DDA3: run_tests<test::console::run_tests_console::{closure_env#2}> (lib.rs:456)
+==6752==    by 0x16DDA3: test::console::run_tests_console (console.rs:327)
+==6752==    by 0x15C3A8: test_main_with_exit_callback<test::test_main::{closure_env#0}> (lib.rs:160)
+==6752==    by 0x15C3A8: test::test_main (lib.rs:101)
+==6752==    by 0x159BFA: test::test_main_static (lib.rs:183)
+==6752==    by 0x1490F2: integration::main (integration.rs:1)
+==6752==    by 0x146F0A: core::ops::function::FnOnce::call_once (library/core/src/ops/function.rs:250)
+==6752==    by 0x14926D: std::sys::backtrace::__rust_begin_short_backtrace (library/std/src/sys/backtrace.rs:166)
+==6752== 
+==6752== LEAK SUMMARY:
+==6752==    definitely lost: 0 bytes in 0 blocks
+==6752==    indirectly lost: 0 bytes in 0 blocks
+==6752==      possibly lost: 48 bytes in 1 blocks
+==6752==    still reachable: 544 bytes in 1 blocks
+==6752==         suppressed: 0 bytes in 0 blocks
+==6752== Reachable blocks (those to which a pointer was found) are not shown.
+==6752== To see them, rerun with: --leak-check=full --show-leak-kinds=all
+==6752== 
+==6752== For lists of detected and suppressed errors, rerun with: -s
+==6752== ERROR SUMMARY: 2 errors from 2 contexts (suppressed: 0 from 0)

@@ -1,0 +1,46 @@
+    Updating crates.io index
+    Updating crates.io index
+ Downloading crates ...
+  Downloaded rustc-literal-escaper v0.0.7
+  Downloaded adler2 v2.0.1
+  Downloaded cfg-if v1.0.4
+  Downloaded addr2line v0.25.1
+  Downloaded foldhash v0.2.0
+  Downloaded getopts v0.2.24
+  Downloaded rustc-demangle v0.1.27
+  Downloaded miniz_oxide v0.8.9
+  Downloaded memchr v2.7.6
+  Downloaded hashbrown v0.17.0
+  Downloaded gimli v0.32.3
+  Downloaded object v0.37.3
+  Downloaded libc v0.2.185
+   Compiling compiler_builtins v0.1.160 (/root/.rustup/toolchains/nightly-aarch64-unknown-linux-gnu/lib/rustlib/src/rust/library/compiler-builtins/compiler-builtins)
+   Compiling core v0.0.0 (/root/.rustup/toolchains/nightly-aarch64-unknown-linux-gnu/lib/rustlib/src/rust/library/core)
+   Compiling libc v0.2.185
+   Compiling object v0.37.3
+   Compiling std v0.0.0 (/root/.rustup/toolchains/nightly-aarch64-unknown-linux-gnu/lib/rustlib/src/rust/library/std)
+   Compiling rustc-std-workspace-core v1.99.0 (/root/.rustup/toolchains/nightly-aarch64-unknown-linux-gnu/lib/rustlib/src/rust/library/rustc-std-workspace-core)
+   Compiling alloc v0.0.0 (/root/.rustup/toolchains/nightly-aarch64-unknown-linux-gnu/lib/rustlib/src/rust/library/alloc)
+   Compiling adler2 v2.0.1
+   Compiling memchr v2.7.6
+   Compiling rustc-demangle v0.1.27
+   Compiling cfg-if v1.0.4
+   Compiling panic_abort v0.0.0 (/root/.rustup/toolchains/nightly-aarch64-unknown-linux-gnu/lib/rustlib/src/rust/library/panic_abort)
+   Compiling rustc-literal-escaper v0.0.7
+   Compiling unwind v0.0.0 (/root/.rustup/toolchains/nightly-aarch64-unknown-linux-gnu/lib/rustlib/src/rust/library/unwind)
+   Compiling rustc-std-workspace-alloc v1.99.0 (/root/.rustup/toolchains/nightly-aarch64-unknown-linux-gnu/lib/rustlib/src/rust/library/rustc-std-workspace-alloc)
+   Compiling panic_unwind v0.0.0 (/root/.rustup/toolchains/nightly-aarch64-unknown-linux-gnu/lib/rustlib/src/rust/library/panic_unwind)
+   Compiling gimli v0.32.3
+   Compiling miniz_oxide v0.8.9
+   Compiling hashbrown v0.17.0
+   Compiling std_detect v0.1.5 (/root/.rustup/toolchains/nightly-aarch64-unknown-linux-gnu/lib/rustlib/src/rust/library/std_detect)
+   Compiling addr2line v0.25.1
+   Compiling proc_macro v0.0.0 (/root/.rustup/toolchains/nightly-aarch64-unknown-linux-gnu/lib/rustlib/src/rust/library/proc_macro)
+   Compiling broken-app v0.1.0 (/work/broken-app)
+    Finished `dev` profile [unoptimized + debuginfo] target(s) in 12.99s
+     Running `/tmp/linux-asan/debug/demo`
+sum_even: 6
+non-zero bytes: 3
+normalize: helloworld
+fib(20): 6765
+dedup: [1, 2, 3, 4]

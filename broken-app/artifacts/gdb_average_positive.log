@@ -1,0 +1,14 @@
+warning: Missing auto-load script at offset 0 in section .debug_gdb_scripts
+of file /work/broken-app/target/debug/logic_probe.
+Use `info auto-load python-scripts [REGEXP]' to list them.
+Breakpoint 1 at 0x8fec: file src/lib.rs, line 23.
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/aarch64-linux-gnu/libthread_db.so.1".
+
+Breakpoint 1, broken_app::average_positive (values=...) at src/lib.rs:23
+23	        .iter()
+#0  broken_app::average_positive (values=...) at src/lib.rs:23
+#1  0x0000aaaaaaaa8d68 in logic_probe::main () at src/bin/logic_probe.rs:5
+average_positive: 10
+normalize: helloworld
+[Inferior 1 (process 4803) exited normally]

@@ -1,0 +1,24 @@
+==9284== Memcheck, a memory error detector
+==9284== Copyright (C) 2002-2022, and GNU GPL'd, by Julian Seward et al.
+==9284== Using Valgrind-3.19.0 and LibVEX; rerun with -h for copyright info
+==9284== Command: cargo run --quiet --bin demo
+==9284== 
+==9284== Conditional jump or move depends on uninitialised value(s)
+==9284==    at 0x4B8324: regex_syntax::ast::parse::ParserI<P>::parse_counted_repetition (in /root/.cargo/bin/rustup)
+==9284==    by 0x454EC3: regex_automata::meta::regex::Builder::build (in /root/.cargo/bin/rustup)
+==9284==    by 0x27261F: regex::regex::string::Regex::new (in /root/.cargo/bin/rustup)
+==9284==    by 0x5FC327: core::ops::function::FnOnce::call_once (in /root/.cargo/bin/rustup)
+==9284==    by 0x5FB2FB: std::sync::once::Once::call_once_force::{{closure}} (in /root/.cargo/bin/rustup)
+==9284==    by 0x29A7AF: std::sys::sync::once::futex::Once::call (in /root/.cargo/bin/rustup)
+==9284==    by 0x5F0BF7: <rustup::dist::ParsedToolchainDesc as core::str::traits::FromStr>::from_str (in /root/.cargo/bin/rustup)
+==9284==    by 0x5EF78B: <rustup::dist::PartialToolchainDesc as core::str::traits::FromStr>::from_str (in /root/.cargo/bin/rustup)
+==9284==    by 0x5EF5D7: rustup::toolchain::names::ResolvableToolchainName::validate (in /root/.cargo/bin/rustup)
+==9284==    by 0x6C02C3: rustup::config::Cfg::from_env (in /root/.cargo/bin/rustup)
+==9284==    by 0x2E079B: rustup::cli::proxy_mode::main::{{closure}}::{{closure}} (in /root/.cargo/bin/rustup)
+==9284==    by 0x2A5A8B: rustup_init::run_rustup_inner::{{closure}}::{{closure}} (in /root/.cargo/bin/rustup)
+==9284== 
+sum_even: 6
+non-zero bytes: 3
+normalize: helloworld
+fib(20): 6765
+dedup: [1, 2, 3, 4]
